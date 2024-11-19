@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32a0832d-b744-4b70-894d-626dbaea9d6a">
+  <producedTypes>
+    <objectType typeId="9093c216-696b-4bd8-bb4e-7331ecebfff5" valueTypeId="42a92c16-3535-48ae-ac14-5b8694d3fb5a"/>
+  </producedTypes>
+  <name>РегистрацияЦенУТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрация цен УТ</value>
+  </synonym>
+  <comment>18.11.2024</comment>
+  <containedObjects classId="e41aff26-25cf-4bb6-b6c1-3f478a75f374" objectId="ad0047be-1d5e-4971-b260-40c91bb5bd5b"/>
+  <defaultForm>ExternalReport.РегистрацияЦенУТ.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>ExternalReport.РегистрацияЦенУТ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="67ed98c2-7c0c-496e-850d-358ddda0b4fc">
+    <name>ВидЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид цены</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="86214270-1fce-4510-99d7-9499c94257b4">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="84e47f85-9390-4001-8c16-2bb3ebf18604">
+    <name>ВремяОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время отчета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="0e31881c-a72c-484c-98e0-855973885e12">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e87e5460-0a1b-47dc-a1e5-e3f7d001382a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:ExternalReport>
